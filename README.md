@@ -136,12 +136,12 @@ Models are trained on data up to 2021 and evaluated on the 2022 season (temporal
 ### Final Restored Accuracies (All Crops & Joint Model)
 Our final optimized model performance results:
 
-| Model / Notebook | Target Crop | R² Accuracy | Status |
-| :--- | :--- | :---: | :---: |
-| [02_corn_yield_prediction.ipynb](file:///home/user/projects/Crop_Net/notebooks/02_corn_yield_prediction.ipynb) | Corn | **69.52%** | **PASS** (Target ~70%) |
-| [03_soybean_yield_prediction.ipynb](file:///home/user/projects/Crop_Net/notebooks/03_soybean_yield_prediction.ipynb) | Soybean | **73.60%** | **PASS** (Target >70%) |
-| [04_wheat_yield_prediction.ipynb](file:///home/user/projects/Crop_Net/notebooks/04_wheat_yield_prediction.ipynb) | Winter Wheat | **72.55%** | **PASS** (Target >70%) |
-| [05_multicrop_joint_prediction.ipynb](file:///home/user/projects/Crop_Net/notebooks/05_multicrop_joint_prediction.ipynb) (Joint) | Multi-Crop (Combined Raw Yields)<br>• *Corn inside Multi-Crop*<br>• *Soybean inside Multi-Crop*<br>• *Wheat inside Multi-Crop* | **90.42%**<br>**65.14%**<br>**70.28%**<br>**63.14%** | **PASS** (Balanced loss)<br>**PASS**<br>**PASS** (Restored to >70%!)<br>**PASS** |
+| Model / Notebook | Target Crop | R² Accuracy |
+| :--- | :--- | :---: |
+| [02_corn_yield_prediction.ipynb](file:///home/user/projects/Crop_Net/notebooks/02_corn_yield_prediction.ipynb) | Corn | **69.52%** |
+| [03_soybean_yield_prediction.ipynb](file:///home/user/projects/Crop_Net/notebooks/03_soybean_yield_prediction.ipynb) | Soybean | **73.60%** |
+| [04_wheat_yield_prediction.ipynb](file:///home/user/projects/Crop_Net/notebooks/04_wheat_yield_prediction.ipynb) | Winter Wheat | **72.55%** |
+| [05_multicrop_joint_prediction.ipynb](file:///home/user/projects/Crop_Net/notebooks/05_multicrop_joint_prediction.ipynb) (Joint) | Multi-Crop (Combined Raw Yields)<br>• *Corn inside Multi-Crop*<br>• *Soybean inside Multi-Crop*<br>• *Wheat inside Multi-Crop* | **90.42%**<br>**65.14%**<br>**70.28%**<br>**63.14%** |
 
 ---
 
