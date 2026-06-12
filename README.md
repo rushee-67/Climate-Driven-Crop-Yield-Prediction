@@ -4,6 +4,10 @@ A state-of-the-art spatiotemporal crop yield prediction system that leverages me
 
 This repository presents a complete pipeline—from data aggregation and crop-specific growing season alignment to baseline Machine Learning (Random Forest, XGBoost) and advanced Long Short-Term Memory (LSTM) network architectures.
 
+<p align="center">
+  <img src="assets/cropnet_modalities.png" alt="CropNet Dataset Modalities" width="800">
+</p>
+
 ---
 
 ## 📌 Project Overview
