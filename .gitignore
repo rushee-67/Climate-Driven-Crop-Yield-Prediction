@@ -11,6 +11,7 @@ processed/
 *.keras
 *.pkl
 *.h5
+*.json
 
 # Python bytecode & cache
 __pycache__/

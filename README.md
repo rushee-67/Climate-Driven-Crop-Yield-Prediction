@@ -157,11 +157,6 @@ CropNet/
 │   ├── 04_wheat_yield_prediction.ipynb    # Executed Wheat notebook with R² output
 │   └── 05_multicrop_joint_prediction.ipynb # Joint model training for all crops (Per-Crop scaling)
 │
-├── configs/
-│   ├── corn_config.json             # Serialized configurations
-│   ├── soybean_config.json
-│   └── wheat_config.json
-│
 ├── .gitignore                       # Git exclusions for datasets and binaries
 ├── requirements.txt                 # Core dependencies
 ├── README.md                        # Documentation
@@ -170,7 +165,10 @@ CropNet/
 │   ├── corn4_data.npz               # Aligned dataset for Corn (run notebook 01 to generate)
 │   ├── soybean_data.npz             # Aligned dataset for Soybean (run notebook 01 to generate)
 │   ├── wheat_data.npz               # Aligned dataset for Winter Wheat (run notebook 01 to generate)
-│   └── processed/                   # Monthly weather CSVs and raw crop yield data
+│   ├── processed/                   # Monthly weather CSVs and raw crop yield data
+│   ├── corn_config.json             # Serialized configuration metadata (auto-generated)
+│   ├── soybean_config.json          # Serialized configuration metadata (auto-generated)
+│   └── wheat_config.json            # Serialized configuration metadata (auto-generated)
 ```
 
 ---
