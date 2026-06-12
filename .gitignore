@@ -1,0 +1,25 @@
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Data files (Exclude raw and processed datasets)
+*.npz
+*.csv
+processed/
+
+# Model checkpoints & serializations
+*.keras
+*.pkl
+*.h5
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE and Environment settings
+.vscode/
+.idea/
+.env
+venv/
+env/

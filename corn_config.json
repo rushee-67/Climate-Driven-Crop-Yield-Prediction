@@ -1,0 +1,59 @@
+{
+    "crop": "corn",
+    "months_used": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    ],
+    "sequence_features": [
+        {
+            "index": 0,
+            "name": "max_temp_C"
+        },
+        {
+            "index": 1,
+            "name": "min_temp_C"
+        },
+        {
+            "index": 2,
+            "name": "temp_range"
+        },
+        {
+            "index": 3,
+            "name": "gdd"
+        },
+        {
+            "index": 4,
+            "name": "precipitation"
+        },
+        {
+            "index": 5,
+            "name": "relative_humidity"
+        },
+        {
+            "index": 6,
+            "name": "radiation"
+        }
+    ],
+    "engineered_features": {
+        "total_rain": "sum(X[:, :, 4])",
+        "avg_temp_season": "mean(X[:, :, 0:2])"
+    },
+    "lag_features": [
+        "yield_lag_1",
+        "yield_lag_2",
+        "yield_trend",
+        "total_rain",
+        "avg_temp_season"
+    ],
+    "input_shape": {
+        "sequence": [
+            6,
+            7
+        ],
+        "lag": 5
+    }
+}

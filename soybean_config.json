@@ -1,0 +1,74 @@
+{
+    "crop": "soybean",
+    "months_used": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+    ],
+    "sequence_features": [
+        {
+            "index": 0,
+            "name": "max_temp_C"
+        },
+        {
+            "index": 1,
+            "name": "min_temp_C"
+        },
+        {
+            "index": 2,
+            "name": "temp_range"
+        },
+        {
+            "index": 3,
+            "name": "gdd"
+        },
+        {
+            "index": 4,
+            "name": "precipitation"
+        },
+        {
+            "index": 5,
+            "name": "relative_humidity"
+        },
+        {
+            "index": 6,
+            "name": "radiation"
+        },
+        {
+            "index": 7,
+            "name": "evapotranspiration"
+        }
+    ],
+    "engineered_features": {
+        "total_rain": "sum(X[:, :, 4])",
+        "avg_temp_season": "mean(X[:, :, 0:2])",
+        "rain_flowering": "sum(X[:, 2:4, 4])",
+        "heat_stress": "count(X[:, :, 0] > 35)",
+        "gdd_total": "sum(X[:, :, 3])",
+        "avg_humidity": "mean(X[:, :, 5])",
+        "et_total": "sum(X[:, :, 7])"
+    },
+    "lag_features": [
+        "yield_lag_1",
+        "yield_lag_2",
+        "yield_trend",
+        "total_rain",
+        "avg_temp_season",
+        "rain_flowering",
+        "heat_stress",
+        "gdd_total",
+        "avg_humidity",
+        "et_total"
+    ],
+    "input_shape": {
+        "sequence": [
+            6,
+            8
+        ],
+        "lag": 8
+    },
+    "notes": "GDD computed as avg_temp_C - 10 (Celsius). Feature indices updated after selection."
+}
